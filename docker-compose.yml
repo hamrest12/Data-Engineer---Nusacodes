@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  
+  database_server:
+    image: postgres:15-alpine
+    restart: always
+    container_name: postgres-server
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=adminpass123
+      - POSTGRES_DB=tes_postgres
+
+    ports:
+      - "5432:5432"
+
+  clickhouse_server:
+    image: clickhouse/clickhouse-server:latest
+    restart: always
+    container_name: clickhouse-server
+    environment:
+      - CLICKHOUSE_USER=clickhouse
+      - CLICKHOUSE_PASSWORD=adminpass123
+      - CLICKHOUSE_DB=tes_clickhouse
+
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+
+  mysql_server:
+    image: mysql:8.0
+    restart: always
+    container_name: mysql_server
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_adminpass123
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=adminpass123
+      - MYSQL_DATABASE=tes_mysql
+    ports:
+      - "3306:3306"
