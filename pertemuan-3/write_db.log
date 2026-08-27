@@ -1,0 +1,47 @@
+2026-08-27 09:11:25,506 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:11:25,540 - INFO - CSV Ingestion to PostgresSQL completed
+2026-08-27 09:14:42,447 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:14:42,452 - INFO - CSV Ingestion to PostgresSQL completed
+2026-08-27 09:16:43,600 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:16:43,605 - INFO - CSV Ingestion to PostgresSQL completed
+2026-08-27 09:18:08,195 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:18:08,198 - INFO - Processing olist_costumers_dataset.csv for table public.dim_costumers (DIM)
+2026-08-27 09:18:08,233 - INFO - Processing olist_geolocation_dataset.csv for table public.dim_geolocation (DIM)
+2026-08-27 09:18:08,236 - INFO - Processing olist_order_payments_dataset.csv for table public.dim_order_payments (DIM)
+2026-08-27 09:18:08,240 - INFO - Processing olist_products_dataset.csv for table public.dim_products (DIM)
+2026-08-27 09:18:08,244 - INFO - Processing olist_sellers_dataset.csv for table public.dim_sellers (DIM)
+2026-08-27 09:18:08,247 - INFO - Processing product_category_name_translation.csv for table public.dim_product_category_name_translation (DIM)
+2026-08-27 09:18:08,251 - INFO - Processing olist_order_items_dataset.csv for table public.fact_order_items (FACT)
+2026-08-27 09:18:08,255 - INFO - Processing olist_order_reviews_dataset.csv for table public.fact_order_reviews (FACT)
+2026-08-27 09:18:08,259 - INFO - Processing olist_orders_dataset.csv for table public.fact_orders (FACT)
+2026-08-27 09:18:08,263 - INFO - CSV Ingestion to PostgresSQL completed
+2026-08-27 09:20:42,981 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:20:42,984 - INFO - Processing olist_costumers_dataset.csv for table public.dim_costumers (DIM)
+2026-08-27 09:20:42,989 - INFO - Processing olist_geolocation_dataset.csv for table public.dim_geolocation (DIM)
+2026-08-27 09:20:42,992 - INFO - Processing olist_order_payments_dataset.csv for table public.dim_order_payments (DIM)
+2026-08-27 09:20:42,995 - INFO - Processing olist_products_dataset.csv for table public.dim_products (DIM)
+2026-08-27 09:20:42,999 - INFO - Processing olist_sellers_dataset.csv for table public.dim_sellers (DIM)
+2026-08-27 09:20:43,003 - INFO - Processing product_category_name_translation.csv for table public.dim_product_category_name_translation (DIM)
+2026-08-27 09:20:43,008 - INFO - Processing olist_order_items_dataset.csv for table public.fact_order_items (FACT)
+2026-08-27 09:20:43,013 - INFO - Processing olist_order_reviews_dataset.csv for table public.fact_order_reviews (FACT)
+2026-08-27 09:20:43,018 - INFO - Processing olist_orders_dataset.csv for table public.fact_orders (FACT)
+2026-08-27 09:20:43,023 - INFO - CSV Ingestion to PostgresSQL completed
+2026-08-27 09:22:34,472 - INFO - Starting CSV Ingestion to PostgressSQL....
+2026-08-27 09:22:34,475 - INFO - Processing olist_costumers_dataset.csv for table public.dim_costumers (DIM)
+2026-08-27 09:22:34,480 - INFO - Processing olist_geolocation_dataset.csv for table public.dim_geolocation (DIM)
+2026-08-27 09:22:35,202 - INFO - Tabel public.dim_geolocation Berhasil dihapus jika sudah ada
+2026-08-27 09:23:42,364 - INFO - Processing olist_order_payments_dataset.csv for table public.dim_order_payments (DIM)
+2026-08-27 09:23:42,483 - INFO - Tabel public.dim_order_payments Berhasil dihapus jika sudah ada
+2026-08-27 09:23:49,261 - INFO - Processing olist_products_dataset.csv for table public.dim_products (DIM)
+2026-08-27 09:23:49,331 - INFO - Tabel public.dim_products Berhasil dihapus jika sudah ada
+2026-08-27 09:23:50,773 - INFO - Processing olist_sellers_dataset.csv for table public.dim_sellers (DIM)
+2026-08-27 09:23:50,794 - INFO - Tabel public.dim_sellers Berhasil dihapus jika sudah ada
+2026-08-27 09:23:50,996 - INFO - Processing product_category_name_translation.csv for table public.dim_product_category_name_translation (DIM)
+2026-08-27 09:23:51,018 - INFO - Tabel public.dim_product_category_name_translation Berhasil dihapus jika sudah ada
+2026-08-27 09:23:51,033 - INFO - Processing olist_order_items_dataset.csv for table public.fact_order_items (FACT)
+2026-08-27 09:23:51,259 - INFO - Tabel public.fact_order_items Berhasil dihapus jika sudah ada
+2026-08-27 09:23:55,958 - INFO - Processing olist_order_reviews_dataset.csv for table public.fact_order_reviews (FACT)
+2026-08-27 09:23:56,305 - INFO - Tabel public.fact_order_reviews Berhasil dihapus jika sudah ada
+2026-08-27 09:23:59,441 - INFO - Processing olist_orders_dataset.csv for table public.fact_orders (FACT)
+2026-08-27 09:23:59,796 - INFO - Tabel public.fact_orders Berhasil dihapus jika sudah ada
+2026-08-27 09:24:03,818 - INFO - CSV Ingestion to PostgresSQL completed
