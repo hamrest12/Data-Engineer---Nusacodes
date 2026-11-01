@@ -55,32 +55,32 @@ print(df.head(10))
 # print(PAH_Mean)
 
 # MYSQL
-print("\n--- Mengirim Data ke Mysql ---")
-try:
-    df.to_sql(name='Hasil_Transformasi', con=mysql_engine, if_exists='replace', index=False)
-    print("Data berhasil create di Database Mysql Docker")
-except Exception as e:
-    print(f"Gagal Input ke database: \n{e}")
-
-# POSTGRES
-print("\n--- Mengirim Data ke Postgres ---")
-try:
-    df.to_sql(name='Hasil_Transformasi', con=pg_engine, if_exists='replace', index=False)
-    print("Data berhasil create di Database Postgres Docker")
-except Exception as e:
-    print(f"Gagal Input ke database: \n{e}")
-
-# # CLICKHOUSE
-# print("\n--- Mengirim Data ke Clickhouse ---")
+# print("\n--- Mengirim Data ke Mysql ---")
 # try:
-#     client = clickhouse_connect.get_client(
-#         host='localhost',
-#         port=8123,
-#         username='clickhouse',
-#         password='adminpass123',
-#         database='tes_clickhouse'
-#     )
-#     client.insert_df(table='Hasil_Transformasi', df=df)
-#     print("Data berhasil create di Database Clickhouse Docker")
+#     df.to_sql(name='Hasil_Transformasi', con=mysql_engine, if_exists='replace', index=False)
+#     print("Data berhasil create di Database Mysql Docker")
 # except Exception as e:
 #     print(f"Gagal Input ke database: \n{e}")
+
+# # POSTGRES
+# print("\n--- Mengirim Data ke Postgres ---")
+# try:
+#     df.to_sql(name='Hasil_Transformasi', con=pg_engine, if_exists='replace', index=False)
+#     print("Data berhasil create di Database Postgres Docker")
+# except Exception as e:
+#     print(f"Gagal Input ke database: \n{e}")
+
+# # CLICKHOUSE
+print("\n--- Mengirim Data ke Clickhouse ---")
+try:
+    client = clickhouse_connect.get_client(
+        host='localhost',
+        port=8123,
+        username='clickhouse',
+        password='adminpass123',
+        database='tes_clickhouse'
+    )
+    client.insert_df(table='Hasil_Transformasi', df=df)
+    print("Data berhasil create di Database Clickhouse Docker")
+except Exception as e:
+    print(f"Gagal Input ke database: \n{e}")

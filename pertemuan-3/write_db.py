@@ -105,4 +105,4 @@ def ingest_csv_to_clickhouse():
 
 if __name__ == "__main__":
     ingest_csv_to_clickhouse()
-    logging.info("CSV Ingestion to Clickhouse completed")
+    logging.info("CSV Ingestion to Clickhouse completed")  
